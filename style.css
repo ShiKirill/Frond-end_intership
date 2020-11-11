@@ -1,0 +1,296 @@
+@import url(css/normalize.css);
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+}
+
+.cell {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 3.125rem;
+}
+
+.top {
+    padding-top: 1.875rem;
+}
+
+.top_descrip {
+    display: inline-block;
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: normal;
+    letter-spacing: 0.01rem;
+    color: #8C8C8C;
+    margin-bottom: 1rem;
+}
+
+.search {
+    padding-left: 0.75rem;
+    height: 1.875rem;
+    width: 13.125rem;
+    border: 1px solid #BCBCBC;
+}
+
+.search_submit {
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.875rem;
+    width: 5.625rem;
+    height: 2.5rem;
+    margin-left: 0.8rem;
+    background-color: #000;
+    border: 1px solid #000;
+    letter-spacing: 0.6px;
+}
+
+.low {
+    display: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    background-image: url(pictures/search.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(27%);
+}
+
+.search,
+.search_submit {
+    box-sizing: border-box;
+}
+
+.search_submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+}
+
+.left_part {
+    position: relative;
+    width: 27%;
+}
+
+.right_part {
+    width: 70%;
+}
+
+.left_part-top {
+    display: flex;
+}
+
+.icon {
+    width: 4.5rem;
+    transform: translateY(0.5rem);
+}
+
+.product {
+    width: 73%;
+}
+
+.product_name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.select_block {
+    margin: 2.1rem 0 1rem 0;
+    width: 8.2rem;
+    height: 2rem;
+}
+
+.period {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+.radio-text {
+    display: block;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.radio-button {
+    margin-right: 0.625rem;
+}
+
+.submit_button {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border: none;
+    background-color: #4990E2;
+    width: 8rem;
+    height: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    border-radius: 3px;
+}
+
+.submit_button:hover {
+    transform: scale(1.1);
+}
+
+.right_part {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+}
+
+.characteristic_name {
+    margin: 0;
+    color: #8C8C8C;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.characteristic_descrip {
+    color: #000;
+    font-weight: 600;
+}
+
+.characteristic_link {
+    text-decoration: none;
+    color: #03a9f4;
+}
+
+.characteristic_link:hover {
+    color: #E77471;
+}
+
+.calibration_content {
+    overflow-x: auto;
+    margin-top: 2.875rem;
+    margin-bottom: 6rem;
+    padding: 2.5rem;
+    border: 1px dashed #939DA6;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.calibration_title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.18;
+}
+
+.calibration_info {
+    width: 100%;
+}
+
+.table_titles-item {
+    font-size: 0.8125rem;
+    color: #939DA6;
+    width: 20%;
+}
+
+.calibration_results {
+    color: #353535;
+    vertical-align: super;
+}
+
+.fake_row {
+    height: 1.625rem;
+}
+
+.fake_cell {
+    width: 100%;
+}
+
+.fake_cell-item {
+    transform: translateY(-0.4rem);
+    width: 100%;
+}
+
+.calibration_data {
+    line-height: 1.1875;
+}
+
+.calibration_slope,
+.calibration_offset,
+.calibration_solutions {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+}
+
+.slope,
+.offset {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    width: 65%;
+}
+
+.calibration_user {
+    font-size: 0.73rem;
+}
+
+.table_scroll {
+    min-width: 500px;
+    overflow-x: auto;
+}
+
+.first_column,
+.third_column,
+.fouth_column {
+    width: 15%;
+}
+
+.fifth_column {
+    width: 22%;
+}
+
+.second_column {
+    width: 33%;
+}
+
+.check_icon_slope,
+.check_icon_offset {
+    width: 1rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

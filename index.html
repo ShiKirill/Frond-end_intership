@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Biocad_test</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="cell top">
+            <p class="top_descrip">Enter inventory number, guid or bims id</p>
+            <form>
+                <input type="search" name="text" class="search" placeholder="A-001234" required>
+                <input type="submit" value="Search" class="search_submit high">
+                <input type="submit" value="" class="search_submit low"> </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell main_info">
+            <div class="left_part">
+                <div class="left_part-top">
+                    <div class="icon"><img src="pictures/scale.svg" alt="" class="icon_item"></div>
+                    <div class="product">
+                        <h2 class="product_name">Аналитические весы OHAUS Adventurer АХ324 (B715976163)</h2></div>
+                </div>
+                <div class="left_part-bottom">
+                    <form class="calibration_form">
+                        <div class="select_block">
+                            <select class="period" id="list">
+                                <option value="day">1 day</option>
+                                <option value="week">1 week</option>
+                                <option value="month">1 month</option>
+                                <option value="year">1 year</option>
+                            </select>
+                        </div>
+                        <label for="calibration" class="radio-text">
+                            <input id="calibration" type="radio" name="report_type" class="radio-button" checked>Calibration</label>
+                        <label for="measuring" class="radio-text">
+                            <input id="measuring" type="radio" name="report_type" class="radio-button">Measuring</label>
+                        <label for="using" class="radio-text">
+                            <input id="using" type="radio" name="report_type" class="radio-button">Using</label>
+                        <input type="submit" value="Generate report" class="submit_button"> </form>
+                </div>
+            </div>
+            <div class="right_part">
+                <div class="characteristic">
+                    <p class="characteristic_name">Тип оборудования: <b class="characteristic_descrip">Весы</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Статус: <b class="characteristic_descrip">Готов к работе</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Изготовитель: <b class="characteristic_descrip">Ohaus</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Модель: <b class="characteristic_descrip">AX-123</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Ответственное подразделение (ремонт): <b class="characteristic_descrip">Группа обслуживания лабораторного оборудования</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Эксплуатирующее подразделение: <b class="characteristic_descrip">Химико-аналитическая лаборатория 2.0</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">МОЛ: <b class="characteristic_descrip">Иванов Иван Иванович</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Территория: <b class="characteristic_descrip">г. Санкт-Петербург (Нойдорф)</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Серийный номер: <b class="characteristic_descrip">B715976163</b></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">GUID: <a href="#" class="characteristic_link">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Bims ID: <a href="#" class="characteristic_link">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a></p>
+                </div>
+                <div class="characteristic">
+                    <p class="characteristic_name">Tam: <a href="#" class="characteristic_link">А-001234</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell">
+            <div class="calibration_content">
+                <h3 class="calibration_title">Calibration report</h3>
+                <div class="table_scroll">
+                    <table class="calibration_info">
+                        <tr class="table_titles">
+                            <td class="table_titles-item first_column">Data</td>
+                            <td class="table_titles-item second_column">Used buffer solutions</td>
+                            <td class="table_titles-item third_column">Slope, %
+                                <br> Norm 95-105</td>
+                            <td class="table_titles-item fouth_column">Offset, mV
+                                <br> Norm &plusmn;(0-20)</td>
+                            <td class="table_titles-item fifth_column">User</td>
+                        </tr>
+                        <tr class="fake_row"></tr>
+                        <tr class="calibration_results">
+                            <td class="calibration_data  first_column">04.10.19
+                                <br>10:23</td>
+                            <td class="calibration_solutions second_column"> В1: № 2000460789536: pH 1.09
+                                <br> В2: № 2000460789536: pH 2.00
+                                <br> В3: № 2000460789536: pH 4.01
+                                <br> В4: № 2000460789536: pH 7.00
+                                <br> В5: № 2000460789536: pH 9.21
+                                <br> </td>
+                            <td class="calibration_slope third_column"><span class="slope" id="slope1" data-value="98.7">98.7<img src="#" alt="" class="check_icon_slope"></span></td>
+                            <td class="calibration_offset fouth_column"><span class="offset" id="offset1" data-value="-0.3">-0.3<img src="#" alt="" class="check_icon_offset"></span></td>
+                            <td class="calibration_user fifth_column">Иванов Генадий Петрович</td>
+                        </tr>
+                        <tr class="fake_row">
+                            <td class="fake_cell" colspan="5"><img src="pictures/Line.svg" alt="" class="fake_cell-item"></td>
+                        </tr>
+                        <tr class="calibration_results">
+                            <td class="calibration_data first_column">04.10.19
+                                <br>10:23</td>
+                            <td class="calibration_solutions second_column">В1: № 2000460789536: pH 1.09
+                                <br> В2: № 2000460789536: pH 2.00
+                                <br> В3: № 2000460789536: pH 4.01
+                                <br> В4: № 2000460789536: pH 7.00
+                                <br> В5: № 2000460789536: pH 9.21
+                                <br> </td>
+                            <td class="calibration_slope third_column"><span class="slope" id="slope2" data-value="98.7">98.7<img src="#" alt="" class="check_icon_slope"></span></td>
+                            <td class="calibration_offset fouth_column"><span class="offset" id="offset2" data-value="-0.3">-0.3<img src="#" alt="" class="check_icon_offset"></span></td>
+                            <td class="calibration_user fifth_column">Петров Иван Генадьевич</td>
+                        </tr>
+                        <td class="fake_cell" colspan="5"><img src="pictures/Line.svg" alt="" class="fake_cell-item"></td>
+                        <tr class="calibration_results">
+                            <td class="calibration_data  first_column">04.10.19
+                                <br>10:23</td>
+                            <td class="calibration_solutions second_column">В1: № 2000460789536: pH 1.09
+                                <br> В2: № 2000460789536: pH 2.00
+                                <br> В3: № 2000460789536: pH 4.01
+                                <br> В4: № 2000460789536: pH 7.00
+                                <br> В5: № 2000460789536: pH 9.21
+                                <br> </td>
+                            <td class="calibration_slope third_column"><span class="slope" id="slope3" data-value="98.7">98.7<img src="#" alt="" class="check_icon_slope"></span></td>
+                            <td class="calibration_offset fouth_column"><span class="offset" id="offset3" data-value="-0.3">-0.3<img src="#" alt="" class="check_icon_offset"></span></td>
+                            <td class="calibration_user fifth_column">Петров Генадий Иванович</td>
+                        </tr>
+                        <td class="fake_cell" colspan="5"><img src="pictures/Line.svg" alt="" class="fake_cell-item"></td>
+                        <tr class="calibration_results">
+                            <td class="calibration_data first_column">04.10.19
+                                <br>10:23</td>
+                            <td class="calibration_solutions second_column">В1: № 2000460789536: pH 1.09
+                                <br> В2: № 2000460789536: pH 2.00
+                                <br> В3: № 2000460789536: pH 4.01
+                                <br> В4: № 2000460789536: pH 7.00
+                                <br> В5: № 2000460789536: pH 9.21
+                                <br> </td>
+                            <td class="calibration_slope third_column"><span class="slope" id="slope4" data-value="90.1">90.1<img src="#" alt="" class="check_icon_slope"></span></td>
+                            <td class="calibration_offset fouth_column"><span class="offset" id="offset4" data-value="-0.5">-0.5<img src="#" alt="" class="check_icon_offset"></span></td>
+                            <td class="calibration_user fifth_column">Генадьев Иван Петрович</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

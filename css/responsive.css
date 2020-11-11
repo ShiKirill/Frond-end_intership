@@ -1,0 +1,50 @@
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 80%;
+    }
+    transform: translateY(0.5rem);
+}
+
+@media screen and (max-width: 650px) {
+    .main_info {
+        flex-direction: column;
+    }
+    .left_part {
+        padding-bottom: 4rem;
+    }
+    .right_part {
+        margin-top: 2rem;
+    }
+    .left_part,
+    .right_part {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cell {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .high {
+        display: none;
+    }
+    .low {
+        margin: 0;
+        display: inline-block;
+    }
+}
